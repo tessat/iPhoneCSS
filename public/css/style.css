@@ -16,6 +16,7 @@ html, body {
 
 
 .iphone {
+	position:relative;
 	background:url('../img/iphone.png');
 	background-size:100%;
 	background:#f5f6f8;
@@ -87,8 +88,10 @@ html, body {
 	width:55px;
 	display:block;
 	margin:10px auto;
-	background: -webkit-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);
-	background: -moz-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);
+	background:#edf0f4;
+	box-shadow: inset 0px -187px 0px -160px #f3f5f9;
+/*	background: -webkit-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);
+	background: -moz-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);*/
 	
 	border:1px solid #e8eaee;
 
@@ -100,11 +103,11 @@ html, body {
 .iphone .home:after {
 	content:"";
 	display:block;
-	height:16px;
-	width:16px;
+	height:17px;
+	width:17px;
 	margin:19px auto;
 	
-	box-shadow:0px 0px 0px 1px #e6e8ed, 2px 2px 1px #d6d8dc, -2px -2px 1px #ffffff, 0px 0px 0px 4px #e6e8ed;
+	box-shadow:2px 2px 1px #d6d8dc, 0px 0px 0.1px 1px #ffffff, -1px 0px 0.1px #ffffff, 0px 0px 0px 2px #e6e8ed;
 	
 	-moz-border-radius: 4px;
   -webkit-border-radius: 4px;
