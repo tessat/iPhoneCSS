@@ -74,7 +74,7 @@ var MONGO_PARSED = parse_url(process.env.MONGOHQ_URL);
 
 var config = {
   detailedErrors: false
-, hostname: null
+, hostname: "0.0.0.0"
 , port: process.env.PORT || 4000
 , model: {
     defaultAdapter: 'mongo'
@@ -88,41 +88,12 @@ var config = {
     , port: parseInt(MONGO_PARSED.port)
     }
   }
-
-/* // Using Postgres as the default, with only a Postgres DB
-, model: {
-    defaultAdapter: 'postgres'
-  }
-, db: {
-    postgres: {
-      user: process.env.USER
-    , database: process.env.USER
-    , password: null
-    , host: null
-    , port: 5432
-    }
-  }
-*/
-
-/* // Using Postgres as the default, with both Postgres and Riak
-, model: {
-    defaultAdapter: 'postgres'
-  }
-, db: {
-    postgres: {
-      user: process.env.USER
-    , database: process.env.USER
-    , password: null
-    , host: null
-    , port: 5432
-    }
-  , riak: {
-      protocol: 'http'
-    , host: 'localhost'
-    , port: 8098
-  }
-  }
-*/
+, sessions: {
+		store: 'cookie'
+	, key: 'did'
+	, expiry: 14 * 24 * 60 * 60
+	}
+	
 };
 
 module.exports = config;
