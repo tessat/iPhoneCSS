@@ -1,6 +1,8 @@
 html, body {
 	margin:0px;
 	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
 }
 
 #iphone {
@@ -283,7 +285,7 @@ html, body {
 }
 
 
-.iphone .home {
+.iphone > .home {
 	height:55px;
 	width:55px;
 	display:block;
@@ -300,7 +302,7 @@ html, body {
   border-radius: 60px;
 }
 
-.iphone .home:after {
+.iphone > .home:after {
 	content:"";
 	display:block;
 	height:17px;
@@ -319,6 +321,7 @@ html, body {
 	width:255px;
 	height:450px;
 	margin:35px auto 5px;
+	padding:3px;
 	
 	box-shadow: 0px 0px 0px 1px #1d1d1d;
 	

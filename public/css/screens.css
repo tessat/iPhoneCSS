@@ -1,0 +1,146 @@
+.iphone .screen .top-bar {
+	text-align:center;
+	font-size:10px;
+	padding:1px 3px 4px;
+}
+
+.iphone .screen .top-bar .signal,
+.iphone .screen .top-bar .wifi {
+	float:left;
+}
+
+.iphone .screen .top-bar .wifi {
+	height:10px;
+	width:10px;
+	position:relative;
+	left:5px;
+	top:-1px;
+	overflow:hidden;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.iphone .screen .top-bar .wifi hr {
+	border:none;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:7px;
+	left:7px;
+	height:6px;
+	width:6px;
+	background:#fff;
+	
+	-moz-border-radius: 		10px;
+  -webkit-border-radius: 	10px;
+  border-radius: 					10px;
+}
+
+.iphone .screen .top-bar .wifi hr:before {
+	content:"";
+	display:block;
+	height:8px;
+	width:8px;
+	position:absolute;
+	left:-3px;
+	top:-3px;
+	border:2px solid #fff;
+	-moz-border-radius: 		10px;
+  -webkit-border-radius: 	10px;
+  border-radius: 					10px;
+}
+
+.iphone .screen .top-bar .wifi hr:after {
+	content:"";
+	display:block;
+	height:14px;
+	width:14px;
+	position:absolute;
+	left:-6px;
+	top:-6px;
+	border:2px solid #fff;
+	-moz-border-radius: 		10px;
+  -webkit-border-radius: 	10px;
+  border-radius: 					10px;
+}
+
+.iphone .screen .top-bar .time {
+	position:relative;
+	left:-6px;
+	font-weight:bold;
+}
+
+.iphone .screen .top-bar .battery {
+	float:right;
+}
+
+.iphone .screen .icons {
+	padding:0px 8px;
+}
+
+.iphone .screen .icon {
+	background:#fff;
+	display:inline-block;
+	position:relative;
+	height:40px;
+	width:40px;
+	padding:4px;
+	margin:3px 4px 13px;
+	
+	-moz-border-radius: 		10px;
+  -webkit-border-radius: 	10px;
+  border-radius: 					10px;
+}
+
+.iphone .screen .icon:after {
+	content:"App";
+	display:block;
+	width:50px;
+	position:absolute;
+	bottom:-13px;
+	left:0px;
+	
+	font-size:9px;
+	text-align:center;
+}
+
+.iphone .screen .nav-bar {
+	position:absolute;
+	bottom:84px;
+	left:0px;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+}
+
+.iphone .screen .nav-bar span {
+	display:inline-block;
+	margin:0px 2px;
+}
+
+.iphone .screen .footer-bar {
+	background:rgba(86, 192, 227, 0.9);
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	padding-top:6px;
+	padding-bottom:4px;
+}
+
+.iphone .screen .home {
+	height:100%;
+	width:100%;
+	position:relative;
+	
+	background: #161d3c; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #161d3c 0%, #16547b 40%, #05abe0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#161d3c), color-stop(40%,#16547b), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #161d3c 0%,#16547b 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #161d3c 0%,#16547b 40%,#05abe0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #161d3c 0%,#16547b 40%,#05abe0 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #161d3c 0%,#16547b 40%,#05abe0 100%); /* W3C */
+}
+
