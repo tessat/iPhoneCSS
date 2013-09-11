@@ -9,7 +9,7 @@ html, body {
 	width:300px;
 	height:615px;
 	position:absolute;
-	left:363px;
+	left:372px;
 	top:7px;
 	
 	display:none;
@@ -29,6 +29,8 @@ html, body {
 	-moz-border-radius:			45px;
   -webkit-border-radius:	45px;
   border-radius:					45px;
+
+	/*opacity:0.5;*/
 }
 
 

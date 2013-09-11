@@ -98,13 +98,16 @@ General Screen Styles
 	margin:4px 5px 14px;
 	padding:0px;
 	
+	cursor: pointer;
+	cursor: hand;
+	
 	-moz-border-radius: 		10px;
   -webkit-border-radius: 	10px;
   border-radius: 					10px;
 }
 
 .iphone .screen .icon:after {
-	content:"App";
+	content:attr(alt);
 	display:block;
 	width:50px;
 	position:absolute;
@@ -154,4 +157,226 @@ Home Screen
 	background: -ms-linear-gradient(-45deg,  #161d3c 0%,#16547b 40%,#05abe0 100%); /* IE10+ */
 	background: linear-gradient(135deg,  #161d3c 0%,#16547b 40%,#05abe0 100%); /* W3C */
 }
+
+.iphone .screen .home .bg {
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	height:100%; 
+	width:100%;
+	overflow:hidden;
+}
+.iphone .screen .home .bg span {
+	display:block;
+	position:absolute;
+	background:rgba(255,255,255,0.3);
+	height:1px;
+	width:1px;
+	
+	-moz-border-radius: 		5px;
+  -webkit-border-radius: 	5px;
+  border-radius: 					5px;
+}
+.iphone .screen .home .bg span:nth-child(2n+1) {
+	box-shadow:0px 0px 1px 1px rgba(255,255,255,0.6);
+	background:rgba(255,255,255,0.5);
+}
+.iphone .screen .home .bg span:nth-child(2n) {
+	box-shadow:0px 0px 2px 1px rgba(255,255,255,0.6);
+}
+
+/* Home Screen: Icons */
+
+.iphone .screen .icon.messages {
+	background: #9afd7d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9afd7d 0%, #43e62f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9afd7d), color-stop(100%,#43e62f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9afd7d 0%,#43e62f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9afd7d', endColorstr='#43e62f',GradientType=0 ); /* IE6-9 */
+}
+
+.iphone .screen .icon.messages hr {
+	background:#fff;
+	height:27px;
+	width:33px;
+	border:none;
+	margin:8px;
+	margin-left:7px;
+	padding:0px;
+	
+	-moz-border-radius: 		25px;
+  -webkit-border-radius: 	25px;
+  border-radius: 					25px;
+}
+
+.iphone .screen .icon.messages hr:after {
+	content:"";
+	display:block;
+	position:absolute;
+	border-color:transparent #fff;
+	border-style:solid;
+	border-width:2px 0px 6px 4px;
+	bottom:6px;
+	left:14px;
+	width:0px;
+	
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+}
+
+.iphone .screen .icon.calendar {}
+
+.iphone .screen .icon.calendar .weekday {
+	font-size:7px;
+	color:#e18888;
+	display:block;
+	width:100%;
+	float:left;
+	text-align:center;
+	margin-top:6px;
+}
+
+.iphone .screen .icon.calendar .date {
+	font-size:28px;
+	display:block;
+	width:100%;
+	float:left;
+	text-align:center;
+	color:#333;
+	position:relative;
+	top:-1px;
+	font-family: 'Bubbler One', sans-serif;
+	letter-spacing:1px;
+}
+
+.iphone .screen .icon.clock {
+	background:#000;
+}
+
+.iphone .screen .icon.clock .clock {
+	background:#fff;
+	height:40px;
+	width:40px;
+	position:absolute;
+	left:3px;
+	top:3px;
+	
+	-moz-border-radius: 		40px;
+  -webkit-border-radius: 	40px;
+  border-radius: 					40px;
+}
+
+.iphone .screen .icon.clock .clock:after {
+	content:"";
+	position:absolute;
+	top:47%;
+	left:47%;
+	height:3px;
+	width:3px;
+	background:#000;
+	
+	-moz-border-radius: 		4px;
+  -webkit-border-radius: 	4px;
+  border-radius: 					4px;
+}
+
+.iphone .screen .icon.clock .clock hr {
+	position:absolute;
+	top:50%;
+	left:50%;
+	border:none;
+	margin:0px;
+	padding:0px;
+}
+.iphone .screen .icon.clock .clock hr.hour {
+	background:#000;
+	width:9px;
+	height:1px;
+}
+.iphone .screen .icon.clock .clock hr.minute {
+	background:#000;
+	width:14px;
+	height:1px;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: 		left center;
+	-ms-transform-origin:			left center;
+	-o-transform-origin:			left center;
+}
+
+.iphone .screen .icon.clock .clock hr.second {
+	background:#efa2a5;
+	width:13px;
+	height:1px;
+	
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: 		left center;
+	-ms-transform-origin:			left center;
+	-o-transform-origin:			left center;
+}
+
+.iphone .screen .icon.clock .clock div {
+	font-size:5px;
+	color:#333;
+	height:5px;
+	width:95%;
+	margin:0px auto;
+	position:relative;
+}
+
+.iphone .screen .icon.clock .clock div:nth-child(2),
+.iphone .screen .icon.clock .clock div:nth-child(6) {
+	width:51%;
+}
+.iphone .screen .icon.clock .clock div:nth-child(2) {
+	top:-2px;
+}
+.iphone .screen .icon.clock .clock div:nth-child(6) {
+	bottom:-2px;
+}
+.iphone .screen .icon.clock .clock div:nth-child(3),
+.iphone .screen .icon.clock .clock div:nth-child(5) {
+	width:83%;
+}
+.iphone .screen .icon.clock .clock div:nth-child(3) {
+	top:-1px;
+}
+.iphone .screen .icon.clock .clock div:nth-child(5) {
+	bottom:-1px;
+}
+.iphone .screen .icon.clock .clock div:nth-child(4) {
+	height:7px;
+	padding-top:2px;
+}
+.iphone .screen .icon.clock .clock div:nth-child(1) span,
+.iphone .screen .icon.clock .clock div:nth-child(7) span {
+	display:block;
+	width:100%;
+	text-align:center;
+}
+
+.iphone .screen .icon.clock .clock div span:nth-child(1) {
+	position:absolute;
+	left:0px;
+}
+.iphone .screen .icon.clock .clock div span:nth-child(2) {
+	position:absolute;
+	right:0px;
+}
+
 
