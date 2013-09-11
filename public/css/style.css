@@ -9,8 +9,10 @@ html, body {
 	width:300px;
 	height:615px;
 	position:absolute;
-	top:0px;
-	left:0px;
+	left:363px;
+	top:7px;
+	
+	display:none;
 }
 
 
@@ -19,15 +21,14 @@ html, body {
 
 .iphone-border {
 	position:relative;
-	width:300px;
-	height:615px;
+	width:283px;
+	height:598px;
 	margin:10px auto;
 	padding:7px;
 	
-	-moz-border-radius:51px;
-  -webkit-border-radius:51px;
-  border-radius:51px;
-
+	-moz-border-radius:			45px;
+  -webkit-border-radius:	45px;
+  border-radius:					45px;
 }
 
 
@@ -35,9 +36,9 @@ html, body {
 	display:block;
 	position:absolute;
 	top:-3px;
-	left:60px;
+	left:51px;
 	height:2px;
-	width:45px;
+	width:48px;
 	
 	background: #807f83; /* Old browsers */
 	background: -moz-linear-gradient(left,  #807f83 0%, #c8cac9 1%, #a3a5a4 4%, #909291 5%, #9ea09f 93%, #abadac 94%, #c8cac9 99%, #807f83 100%); /* FF3.6+ */
@@ -84,22 +85,22 @@ html, body {
 }
 
 .iphone-border .volume {
-	height:23px;
+	height:21px;
 }
 
 .iphone-border .volume.up {
-	top:145px;
+	top:143px;
 }
 
 .iphone-border .volume.down {
-	top:195px;
+	top:194px;
 }
 
 .iphone-border > span {
 	display:block;
 	position:absolute;
-	width:158px;
-	height:315px;
+	width:149px;
+	height:306px;
 }
 
 .iphone-border > span:after {
@@ -139,9 +140,9 @@ html, body {
 	background: linear-gradient(45deg,  #d2d4d3 0%,#6f7170 52%,#dcdee1 52%,#dcdee1 54%,#6d6f6e 54%,#7c7e7d 59%,#dee0df 64%,#f4f6f5 68%,#959796 68%,#a1a3a2 76%,#e6e8e7 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d4d3', endColorstr='#e6e8e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	-moz-border-radius:			51px 0px 0px 0px;
-  -webkit-border-radius:	51px 0px 0px 0px;
-  border-radius:					51px 0px 0px 0px;
+	-moz-border-radius:			45px 0px 0px 0px;
+  -webkit-border-radius:	45px 0px 0px 0px;
+  border-radius:					45px 0px 0px 0px;
 }
 
 .iphone-border span.top.right {
@@ -154,9 +155,9 @@ html, body {
 	background: linear-gradient(135deg,  #e6e8e7 0%,#b8bab9 22%,#707271 26%,#b8bab9 30%,#eef0ef 35%,#808281 35%,#6d6f6e 46%,#dcdee1 46%,#dcdee1 48%,#6f7170 48%,#d2d4d3 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e8e7', endColorstr='#d2d4d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	-moz-border-radius:			0px 51px 0px 0px;
-  -webkit-border-radius:	0px 51px 0px 0px;
-  border-radius:					0px 51px 0px 0px;
+	-moz-border-radius:			0px 45px 0px 0px;
+  -webkit-border-radius:	0px 45px 0px 0px;
+  border-radius:					0px 45px 0px 0px;
 }
 
 .iphone-border span.bottom.left {
@@ -169,9 +170,9 @@ html, body {
 	background: linear-gradient(135deg,  #d2d4d3 0%,#6f7170 52%,#dcdee1 52%,#dcdee1 54%,#6d6f6e 54%,#7c7e7d 59%,#dee0df 64%,#f4f6f5 68%,#959796 68%,#a1a3a2 76%,#e6e8e7 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d4d3', endColorstr='#e6e8e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	-moz-border-radius:			0px 0px 0px 51px;
-  -webkit-border-radius:	0px 0px 0px 51px;
-  border-radius:					0px 0px 0px 51px;
+	-moz-border-radius:			0px 0px 0px 45px;
+  -webkit-border-radius:	0px 0px 0px 45px;
+  border-radius:					0px 0px 0px 45px;
 }
 
 .iphone-border span.bottom.right {
@@ -184,9 +185,9 @@ html, body {
 	background: linear-gradient(45deg,  #e6e8e7 0%,#b8bab9 22%,#707271 26%,#b8bab9 30%,#eef0ef 35%,#808281 35%,#6d6f6e 46%,#dcdee1 46%,#dcdee1 48%,#6f7170 48%,#d2d4d3 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e8e7', endColorstr='#d2d4d3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	-moz-border-radius:			0px 0px 51px 0px;
-  -webkit-border-radius:	0px 0px 51px 0px;
-  border-radius:					0px 0px 51px 0px;
+	-moz-border-radius:			0px 0px 45px 0px;
+  -webkit-border-radius:	0px 0px 45px 0px;
+  border-radius:					0px 0px 45px 0px;
 }
 
 
@@ -223,15 +224,15 @@ html, body {
 	top:-1px;
 	background:#f5f6f8;
 	margin:0px auto;
-	width:300px;
-	height:615px;
+	width:283px;
+	height:598px;
 	border:1px solid #e7e7e7;
 	
 	box-shadow:0px 0px 1px 2px #f5f6f8, 0px 0px 0px 3px #c3c5c7;
 	
-	-moz-border-radius: 45px;
-  -webkit-border-radius: 45px;
-  border-radius: 45px;
+	-moz-border-radius: 		40px;
+  -webkit-border-radius: 	40px;
+  border-radius: 					40px;
 }
 
 .iphone .speaker {
@@ -239,7 +240,7 @@ html, body {
 	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAMElEQVQIHWMUFxf7r6Wlw8DNw8PAoqKixvDhwweGL18+MzAJiwgz/Pv/j+HPn78MANJuDjHoDx1AAAAAAElFTkSuQmCC"), #262526;
 	height:5px;
 	width:50px;
-	margin:46px auto 0px;
+	margin:44px auto 0px;
 	
 	box-shadow:0px 2px 2px 3px #ffffff, 0px 0px 0px 3px #e8eaed;
 	
@@ -276,7 +277,7 @@ html, body {
 	height:7px;
 	width:7px;
 	position:relative;
-	left:-20px;
+	left:-19px;
 	top:-5px;
 
 	-moz-border-radius: 8px;
@@ -318,9 +319,9 @@ html, body {
 
 .iphone .screen {
 	background:#2a2a2a;
-	width:255px;
-	height:450px;
-	margin:35px auto 5px;
+	width:252px;
+	height:437px;
+	margin:29px auto 5px;
 	padding:3px;
 	
 	box-shadow: 0px 0px 0px 1px #1d1d1d;

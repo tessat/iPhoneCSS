@@ -8,7 +8,7 @@
 
 
 $(document).ready(function() {
-	$(".time").html(displayTime());
+	// $(".time").html(displayTime());
 });
 
 

@@ -1,7 +1,11 @@
+/*
+General Screen Styles
+*/
+
 .iphone .screen .top-bar {
 	text-align:center;
 	font-size:10px;
-	padding:1px 3px 4px;
+	padding:1px 3px 2px;
 }
 
 .iphone .screen .top-bar .signal,
@@ -69,26 +73,30 @@
 
 .iphone .screen .top-bar .time {
 	position:relative;
-	left:-6px;
+	left:-9px;
 	font-weight:bold;
+	font-size:9px;
 }
 
 .iphone .screen .top-bar .battery {
 	float:right;
+	font-size:9px;
+	position:relative;
+	top:2px;
 }
 
 .iphone .screen .icons {
-	padding:0px 8px;
+	padding:0px 7px;
 }
 
 .iphone .screen .icon {
 	background:#fff;
 	display:inline-block;
 	position:relative;
-	height:40px;
-	width:40px;
-	padding:4px;
-	margin:3px 4px 13px;
+	height:46px;
+	width:46px;
+	margin:4px 5px 14px;
+	padding:0px;
 	
 	-moz-border-radius: 		10px;
   -webkit-border-radius: 	10px;
@@ -101,7 +109,7 @@
 	width:50px;
 	position:absolute;
 	bottom:-13px;
-	left:0px;
+	left:-2px;
 	
 	font-size:9px;
 	text-align:center;
@@ -109,7 +117,7 @@
 
 .iphone .screen .nav-bar {
 	position:absolute;
-	bottom:84px;
+	bottom:77px;
 	left:0px;
 	width:100%;
 	text-align:center;
@@ -127,8 +135,11 @@
 	left:0px;
 	bottom:0px;
 	padding-top:6px;
-	padding-bottom:4px;
 }
+
+/*
+Home Screen
+*/
 
 .iphone .screen .home {
 	height:100%;
