@@ -73,7 +73,7 @@ General Screen Styles
 
 .iphone .screen .top-bar .time {
 	position:relative;
-	left:-9px;
+	left:6px;
 	font-weight:bold;
 	font-size:9px;
 }
@@ -83,6 +83,32 @@ General Screen Styles
 	font-size:9px;
 	position:relative;
 	top:2px;
+}
+
+.iphone .screen .top-bar .battery:after {
+	content:"";
+	display:block;
+	height:6px;
+	width:17px;
+	background:#fff;
+	float:right;
+	margin:2px 3px 0px 6px;
+	
+	box-shadow:0px 0px 0px 1px rgba(255,255,255,0.7);
+}
+
+.iphone .screen .top-bar .battery:before {
+	content:"";
+	display:block;
+	height:2px;
+	width:1px;
+	background:rgba(255,255,255,0.9);
+	float:right;
+	position:relative;
+	top:4px;
+	right:2px;
+	
+	box-shadow:0px 0px 0px 1px rgba(255,255,255,0.3);
 }
 
 .iphone .screen .icons {
