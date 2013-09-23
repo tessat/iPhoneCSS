@@ -195,20 +195,24 @@ Home Screen
 .iphone .screen .home .bg span {
 	display:block;
 	position:absolute;
-	background:rgba(255,255,255,0.3);
+	background:rgba(255,255,255,0.1);
 	height:1px;
 	width:1px;
 	
-	-moz-border-radius: 		5px;
-  -webkit-border-radius: 	5px;
-  border-radius: 					5px;
+	box-shadow:0px 0px 1px 35px rgba(255,255,255,0.1);
+	
+	-moz-border-radius: 		80px;
+  -webkit-border-radius: 	80px;
+  border-radius: 					80px;
+
+	display:none;
 }
-.iphone .screen .home .bg span:nth-child(2n+1) {
-	box-shadow:0px 0px 1px 1px rgba(255,255,255,0.5);
-	background:rgba(255,255,255,0.4);
+.iphone .screen .home .bg span:nth-child(3n) {
+	box-shadow:0px 0px 2px 25px rgba(255,255,255,0.1);
 }
 .iphone .screen .home .bg span:nth-child(2n) {
-	box-shadow:0px 0px 2px 1px rgba(255,255,255,0.5);
+	box-shadow:0px 0px 5px 10px rgba(255,255,255,0.2);
+	background:rgba(255,255,255,0.2);
 }
 
 /* Home Screen: Icons */
@@ -451,16 +455,20 @@ Home Screen
 
 /* Home Screen: Icons: Reminders */
 
-.iphone .screen .icon.reminders {}
+.iphone .screen .icon.reminders {
+	overflow:hidden;
+}
 
 .iphone .screen .icon.reminders hr {
-	background:#eee;
+	background:#ccc;
 	border:none;
 	padding:0px;
-	margin:4px 2px;
-	width:62%;
-	height:1px;
-	float:right;	
+	margin:4.2px 2px;
+	width:68%;
+	height:0.5px;
+	float:right;
+	position:relative;
+	left:2px;	
 }
 
 .iphone .screen .icon.reminders hr:nth-child(1) {
@@ -470,10 +478,10 @@ Home Screen
 .iphone .screen .icon.reminders hr:before {
 	content:"";
 	display:block;
-	height:6px;
-	width:6px;
+	height:4.2px;
+	width:4.2px;
 	position:relative;
-	right:10px;
+	right:9px;
 	top:2px;
 	
 	-moz-border-radius: 		6px;
@@ -490,6 +498,9 @@ Home Screen
 	background: -ms-radial-gradient(center, ellipse cover,  #fcae00 0%,#fcb111 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #fcae00 0%,#fcb111 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcae00', endColorstr='#fcb111',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	border:0.5px solid #fff;
+	box-shadow:0px 0px 0px 0.5px #fcb111;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(2):before {
@@ -501,6 +512,9 @@ Home Screen
 	background: -ms-radial-gradient(center, ellipse cover,  #48c6ff 0%,#57c8fe 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #48c6ff 0%,#57c8fe 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6ff', endColorstr='#57c8fe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	border:0.5px solid #fff;
+	box-shadow:0px 0px 0px 0.5px #57c8fe;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(3):before {
@@ -512,6 +526,9 @@ Home Screen
 	background: -ms-radial-gradient(center, ellipse cover,  #86ec4b 0%,#8ae458 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #86ec4b 0%,#8ae458 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86ec4b', endColorstr='#8ae458',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	border:0.5px solid #fff;
+	box-shadow:0px 0px 0px 0.5px #8ae458;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(4):before {
@@ -523,6 +540,9 @@ Home Screen
 	background: -ms-radial-gradient(center, ellipse cover,  #df91f5 0%,#db91f1 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #df91f5 0%,#db91f1 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df91f5', endColorstr='#db91f1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	border:0.5px solid #fff;
+	box-shadow:0px 0px 0px 0.5px #db91f1;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(5):before {
