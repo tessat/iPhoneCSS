@@ -135,10 +135,10 @@ General Screen Styles
 .iphone .screen .icon:after {
 	content:attr(alt);
 	display:block;
-	width:52px;
+	width:56px;
 	position:absolute;
 	bottom:-13px;
-	left:-2px;
+	left:-4px;
 	
 	font-size:9px;
 	text-align:center;
@@ -196,10 +196,10 @@ Home Screen
 	display:block;
 	position:absolute;
 	background:rgba(255,255,255,0.1);
-	height:1px;
-	width:1px;
+	height:10px;
+	width:10px;
 	
-	box-shadow:0px 0px 1px 35px rgba(255,255,255,0.1);
+	box-shadow:0px 0px 1px 25px rgba(255,255,255,0.1);
 	
 	-moz-border-radius: 		80px;
   -webkit-border-radius: 	80px;
@@ -208,10 +208,10 @@ Home Screen
 	display:none;
 }
 .iphone .screen .home .bg span:nth-child(3n) {
-	box-shadow:0px 0px 2px 25px rgba(255,255,255,0.1);
+	box-shadow:0px 0px 2px 15px rgba(255,255,255,0.1);
 }
 .iphone .screen .home .bg span:nth-child(2n) {
-	box-shadow:0px 0px 5px 10px rgba(255,255,255,0.2);
+	box-shadow:0px 0px 2px 1px rgba(255,255,255,0.2);
 	background:rgba(255,255,255,0.2);
 }
 
@@ -239,9 +239,9 @@ Home Screen
 	margin-left:7px;
 	padding:0px;
 	
-	-moz-border-radius: 		25px;
-  -webkit-border-radius: 	25px;
-  border-radius: 					25px;
+	-moz-border-radius: 		30px;
+  -webkit-border-radius: 	30px;
+  border-radius: 					30px;
 }
 
 .iphone .screen .icon.messages hr:after {
@@ -290,9 +290,93 @@ Home Screen
 
 /* Home Screen: Icons: Photos */
 
-.iphone .screen .icon.photos {
+.iphone .screen .icon.photos {}
 	
+.iphone .screen .icon.photos span {
+	display:block;
+	position:absolute;
+	top:37%;
+	left:53%;
+	height:13px;
+	width:18px;
+	
+	-moz-border-radius: 		40px;
+  -webkit-border-radius: 	40px;
+  border-radius: 					40px;
+
+	-webkit-transform-origin: -1.5px center;
+	-moz-transform-origin: 		-1.5px center;
+	-ms-transform-origin:			-1.5px center;
+	-o-transform-origin:			-1.5px center;
 }
+
+.iphone .screen .icon.photos span.red {
+	background:rgba(249,22,0,0.4);
+	
+	-webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+}
+
+.iphone .screen .icon.photos span.orange {
+	background:rgba(250,153,0,0.4);
+	
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+}
+
+.iphone .screen .icon.photos span.yellow {
+	background:rgba(255,235,0,0.6);
+	
+	-webkit-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-o-transform: rotate(315deg);
+}
+
+.iphone .screen .icon.photos span.green {
+	background:rgba(187,229,0,0.5);
+}
+
+.iphone .screen .icon.photos span.seafoam {
+	background:rgba(79,213,85,0.4);
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.iphone .screen .icon.photos span.blue {
+	background:rgba(0,140,244,0.4);
+	
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+.iphone .screen .icon.photos span.purple {
+	background:rgba(55,0,215,0.4);
+	
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+}
+
+.iphone .screen .icon.photos span.pink {
+	background:rgba(229,0,108,0.4);
+	
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+
 
 /* Home Screen: Icons: Camera */
 
@@ -305,6 +389,14 @@ Home Screen
 	background: -ms-linear-gradient(top,  #e5e6e7 0%,#a5a9ab 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #e5e6e7 0%,#a5a9ab 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e6e7', endColorstr='#a5a9ab',GradientType=0 ); /* IE6-9 */
+}
+
+.iphone .screen .icon.camera .body {
+	
+}
+
+.iphone .screen .icon.camera .body .lens {
+	
 }
 
 /* Home Screen: Icons: Weather */
@@ -447,17 +539,136 @@ Home Screen
 	right:0px;
 }
 
+/* Home Screen: Icons: Videos */
+
+.iphone .screen .icon.videos {
+	background: #4fe6bf; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4fe6bf 25%, #5ac8fb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#4fe6bf), color-stop(100%,#5ac8fb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4fe6bf 25%,#5ac8fb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4fe6bf 25%,#5ac8fb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4fe6bf 25%,#5ac8fb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4fe6bf 25%,#5ac8fb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fe6bf', endColorstr='#5ac8fb',GradientType=0 ); /* IE6-9 */
+}
+	
+.iphone .screen .icon.videos .arm {
+	width:100%;
+	height:14px;
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	float:left;
+	
+	-moz-border-radius:			0px 0px 10px 10px;
+  -webkit-border-radius:	0px 0px 10px 10px;
+  border-radius:					0px 0px 10px 10px;
+
+	-webkit-transform: 	rotate(180deg);
+	-moz-transform: 		rotate(180deg);
+	-ms-transform: 			rotate(180deg);
+	-o-transform: 			rotate(180deg);
+	
+	box-shadow:0 -1px 1px -1px #000000;
+}
+
+.iphone .screen .icon.videos .arm:after {
+	content:"";
+	display:block;
+	width:100%;
+	height:0.5px;
+	background:#000;
+	position:absolute;
+	left:0px;
+	top:50%;
+}
+
+.iphone .screen .icon.videos .arm div {
+	width:120%;
+	position:absolute;
+	left:-10%;
+}
+
+.iphone .screen .icon.videos .arm span {
+	display:inline-block;
+	width:14%;
+	height:1px;
+	position:relative;
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+
+.iphone .screen .icon.videos .arm span:after {
+	content:"";
+	display:block;
+	height:15px;
+	width:15px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:#fff;
+	
+	-webkit-transform: 	rotate(45deg);
+	-moz-transform: 		rotate(45deg);
+	-ms-transform: 			rotate(45deg);
+	-o-transform: 			rotate(45deg);
+}
+
+.iphone .screen .icon.videos .arm span:nth-child(2n+1):after {
+	background:#000;
+}
+	
+
 /* Home Screen: Icons: Notes */
 
-.iphone .screen .icon.notes {
+.iphone .screen .icon.notes {}
+
+.iphone .screen .icon.notes .binding {
+	background:#fee028;
+	height:14px;
+	width:100%;
+	border-bottom:1px solid #ddd;
 	
+	-moz-border-radius:			10px 10px 0px 0px;
+  -webkit-border-radius:	10px 10px 0px 0px;
+  border-radius:					10px 10px 0px 0px;
+}
+
+.iphone .screen .icon.notes .binding:after {
+	content:"";
+	display:block;
+	width:100%;
+	height:1px;
+	position:absolute;
+	top:16px;
+	left:0px;
+	border-bottom:1px dotted #aaa;
+}
+
+.iphone .screen .icon.notes hr {
+	margin:8px 0px;
+	padding:0px;
+	border:none;
+	display:block;
+	width:100%;
+	height:0.5px;
+	background:#ccc;
+}
+
+.iphone .screen .icon.notes hr:nth-child(2) {
+	margin-top:8px;
+}
+
+.iphone .screen .icon.notes hr:nth-child(4) {
+	width:97%;
+	left:1px;
+	position:relative;
 }
 
 /* Home Screen: Icons: Reminders */
 
-.iphone .screen .icon.reminders {
-	overflow:hidden;
-}
+.iphone .screen .icon.reminders {}
 
 .iphone .screen .icon.reminders hr {
 	background:#ccc;
@@ -469,10 +680,17 @@ Home Screen
 	float:right;
 	position:relative;
 	left:2px;	
+	display:block;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(1) {
 	margin-top:5px;
+}
+
+.iphone .screen .icon.reminders hr:nth-child(1),
+.iphone .screen .icon.reminders hr:nth-child(5) {
+	width:30px;
+	left:0.6px;
 }
 
 .iphone .screen .icon.reminders hr:before {
@@ -548,6 +766,171 @@ Home Screen
 .iphone .screen .icon.reminders hr:nth-child(5):before {
 	display:none;
 }
+
+/* Home Screen: Icons: Stocks */
+
+.iphone .screen .icon.stocks {
+	background:#000;
+}
+
+/* Home Screen: Icons: Calculator */
+
+.iphone .screen .icon.calculator {}
+
+.iphone .screen .icon.calculator span {
+	display:block;
+	position:absolute;
+	height:49%;
+	padding:0px;
+	width:50%;
+	background:#ff9500;
+	text-align:center;
+	border:1px solid #000;
+	font-family: 'Bubbler One', sans-serif;
+	font-size:20px;
+	line-height:25px;
+}
+
+.iphone .screen .icon.calculator span.left {
+	left:0px;
+	border-left:none;
+}
+
+.iphone .screen .icon.calculator span.right {
+	right:0px;
+	border-right:none;
+}
+
+.iphone .screen .icon.calculator span.top {
+	top:0px;
+	border-top:none;
+}
+
+.iphone .screen .icon.calculator span.bottom {
+	bottom:0px;
+	border-bottom:none;
+}
+
+.iphone .screen .icon.calculator span.left.top {
+	-moz-border-radius:			10px 0px 0px 0px;
+  -webkit-border-radius:	10px 0px 0px 0px;
+  border-radius:					10px 0px 0px 0px;
+}
+
+.iphone .screen .icon.calculator span.right.top {
+	-moz-border-radius:			0px 10px 0px 0px;
+  -webkit-border-radius:	0px 10px 0px 0px;
+  border-radius:					0px 10px 0px 0px;
+}
+
+.iphone .screen .icon.calculator span.left.bottom {
+	-moz-border-radius:			0px 0px 0px 10px;
+  -webkit-border-radius:	0px 0px 0px 10px;
+  border-radius:					0px 0px 0px 10px;
+}
+
+.iphone .screen .icon.calculator span.right.bottom {
+	-moz-border-radius:			0px 0px 10px 0px;
+  -webkit-border-radius:	0px 0px 10px 0px;
+  border-radius:					0px 0px 10px 0px;
+
+	background:#ddd;
+	color:#000;
+}
+
+/* Home Screen: Icons: iTunes Store */
+
+.iphone .screen .icon.voicememos {}
+
+.iphone .screen .icon.voicememos .soundwave {
+	width:100%;
+	height:100%;
+	-webkit-transform: 	rotate(270deg);
+	-moz-transform: 		rotate(270deg);
+	-ms-transform: 			rotate(270deg);
+	-o-transform: 			rotate(270deg);
+}
+
+.iphone .screen .icon.voicememos .soundwave:after {
+	content:"";
+	height:100%;
+	width:0.5px;
+	background:#000;
+	position:absolute;
+	top:0px;
+	left:23px;
+}
+	
+.iphone .screen .icon.voicememos .soundwave hr {
+	background:#000;
+	height:0.5px;
+	margin:0.5px auto;
+	padding:0px;
+	border:none;
+	
+	width:1px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.one {
+	width:1px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.two {
+	width:2px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.three {
+	width:3px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.four {
+	width:4px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.five {
+	width:5px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.six {
+	width:6px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.seven {
+	width:7px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.eight {
+	width:8px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.twelve {
+	width:12px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.fourteen {
+	width:14px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.sixteen {
+	width:16px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.eighteen {
+	width:18px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.thirty {
+	width:30px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.thirtyone {
+	width:31px;
+}
+
+.iphone .screen .icon.voicememos .soundwave hr.fourty {
+	width:40px;
+}
+
 
 
 /* Home Screen: Icons: iTunes Store */
