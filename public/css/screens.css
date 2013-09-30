@@ -915,8 +915,7 @@ Home Screen
 	margin:0.5px auto;
 	padding:0px;
 	border:none;
-	
-	width:1px;
+	width:1px;	
 }
 
 .iphone .screen .icon.voicememos .soundwave hr.one {
@@ -980,19 +979,30 @@ Home Screen
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio:2) { 
-	.iphone .screen .icon.voicememos .soundwave {
-		overflow:hidden;
-		float:left;
-	}
 	.iphone .screen .icon.voicememos .soundwave:after {
 		width:1px;
-		left:22px;
+		
+		background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.01) 51%, rgba(0,0,0,0.01) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(51%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.01))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* IE10+ */
+		background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#03000000',GradientType=1 ); /* IE6-9 */
+		
+		
 	}
 	.iphone .screen .icon.voicememos .soundwave hr {
 		height:1px;
-		margin:1px auto;
-		position:relative;
-		top:-12px;
+		margin:0px auto;
+		
+		background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.01) 51%, rgba(0,0,0,0.01) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(51%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.01))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#03000000',GradientType=0 ); /* IE6-9 */
 	}
 }
 
