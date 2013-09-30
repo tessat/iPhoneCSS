@@ -559,6 +559,7 @@ Home Screen
 	padding:0px;
 	margin:0px;
 	float:left;
+	position:relative;
 	
 	-moz-border-radius:			0px 0px 10px 10px;
   -webkit-border-radius:	0px 0px 10px 10px;
@@ -618,6 +619,12 @@ Home Screen
 .iphone .screen .icon.videos .arm span:nth-child(2n+1):after {
 	background:#000;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+	.iphone .screen .icon.videos .arm:after {
+		height:1px;
+	}
+}
 	
 
 /* Home Screen: Icons: Notes */
@@ -666,6 +673,13 @@ Home Screen
 	position:relative;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+	.iphone .screen .icon.notes hr {
+		height:1px;
+		margin:7px 0px;
+	}
+}
+
 /* Home Screen: Icons: Reminders */
 
 .iphone .screen .icon.reminders {}
@@ -675,11 +689,11 @@ Home Screen
 	border:none;
 	padding:0px;
 	margin:4.2px 2px;
-	width:68%;
+	width:69%;
 	height:0.5px;
-	float:right;
+	float:left;
 	position:relative;
-	left:2px;	
+	left:12px;	
 	display:block;
 }
 
@@ -690,7 +704,6 @@ Home Screen
 .iphone .screen .icon.reminders hr:nth-child(1),
 .iphone .screen .icon.reminders hr:nth-child(5) {
 	width:30px;
-	left:0.6px;
 }
 
 .iphone .screen .icon.reminders hr:before {
@@ -701,6 +714,8 @@ Home Screen
 	position:relative;
 	right:9px;
 	top:2px;
+	
+	border:0.5px solid #fff;
 	
 	-moz-border-radius: 		6px;
   -webkit-border-radius: 	6px;
@@ -717,8 +732,9 @@ Home Screen
 	background: radial-gradient(ellipse at center,  #fcae00 0%,#fcb111 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcae00', endColorstr='#fcb111',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	border:0.5px solid #fff;
-	box-shadow:0px 0px 0px 0.5px #fcb111;
+	box-shadow:					0px 0px 0px 0.5px #fcb111;
+	-moz-box-shadow:		0px 0px 0px 0.5px #fcb111;
+	-webkit-box-shadow: 0px 0px 0px 1px #fcb111;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(2):before {
@@ -731,8 +747,9 @@ Home Screen
 	background: radial-gradient(ellipse at center,  #48c6ff 0%,#57c8fe 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6ff', endColorstr='#57c8fe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	border:0.5px solid #fff;
-	box-shadow:0px 0px 0px 0.5px #57c8fe;
+	box-shadow:					0px 0px 0px 0.5px #57c8fe;
+	-moz-box-shadow:		0px 0px 0px 0.5px #57c8fe;
+	-webkit-box-shadow: 0px 0px 0px 1px #57c8fe;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(3):before {
@@ -745,8 +762,9 @@ Home Screen
 	background: radial-gradient(ellipse at center,  #86ec4b 0%,#8ae458 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86ec4b', endColorstr='#8ae458',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	border:0.5px solid #fff;
-	box-shadow:0px 0px 0px 0.5px #8ae458;
+	box-shadow:					0px 0px 0px 0.5px #8ae458;
+	-moz-box-shadow:		0px 0px 0px 0.5px #8ae458;
+	-webkit-box-shadow: 0px 0px 0px 1px #8ae458;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(4):before {
@@ -759,12 +777,25 @@ Home Screen
 	background: radial-gradient(ellipse at center,  #df91f5 0%,#db91f1 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df91f5', endColorstr='#db91f1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	
-	border:0.5px solid #fff;
-	box-shadow:0px 0px 0px 0.5px #db91f1;
+	box-shadow:					0px 0px 0px 0.5px #db91f1;
+	-moz-box-shadow:		0px 0px 0px 0.5px #db91f1;
+	-webkit-box-shadow: 0px 0px 0px 1px #db91f1;
 }
 
 .iphone .screen .icon.reminders hr:nth-child(5):before {
 	display:none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+	.iphone .screen .icon.reminders hr {
+		height:1px;
+		margin:4px 2px;
+	}
+	.iphone .screen .icon.reminders hr:before {
+		border:1px solid #fff;
+		height:3px;
+		width:3px;
+	}
 }
 
 /* Home Screen: Icons: Stocks */
@@ -929,6 +960,23 @@ Home Screen
 
 .iphone .screen .icon.voicememos .soundwave hr.fourty {
 	width:40px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) { 
+	.iphone .screen .icon.voicememos .soundwave {
+		overflow:hidden;
+		float:left;
+	}
+	.iphone .screen .icon.voicememos .soundwave:after {
+		width:1px;
+		left:22px;
+	}
+	.iphone .screen .icon.voicememos .soundwave hr {
+		height:1px;
+		margin:1px auto;
+		position:relative;
+		top:-10px;
+	}
 }
 
 

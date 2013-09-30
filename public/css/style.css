@@ -5,6 +5,13 @@ html, body {
 	color:#fff;
 }
 
+hr {
+	-webkit-margin-before:0px;
+	-webkit-margin-after:0px;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+}
+
 #iphone {
 	width:300px;
 	height:615px;
