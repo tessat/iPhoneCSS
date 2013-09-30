@@ -16,7 +16,11 @@ $(document).ready(function() {
 	$(".icon.calendar .date").html(displayDate());
 	
 	// Set the clock icon
-	// TODO
+	rotateClock();
+	setInterval(function() {
+		rotateClock();
+	},60000);
+	
 	
 });
 
@@ -101,4 +105,38 @@ function displayDate() {
 		date = "0" + date;
 	}
 	return date;
+}
+
+function rotateClock(set) {
+	var currentTime = new Date();
+	var hours 			= currentTime.getHours();
+	var minutes 		= currentTime.getMinutes();
+	var seconds			= currentTime.getSeconds();
+
+	hours = (hours%12) + (minutes/60);
+
+	hDeg = (hours*360)/12;
+	mDeg = (minutes*360)/60;
+	sDeg = (seconds*360)/60;
+	
+	$(".icon.clock .clock").addClass("set");
+	
+	doRotate(".icon.clock hr.hour", hDeg);
+	doRotate(".icon.clock hr.minute", mDeg);
+	doRotate(".icon.clock hr.second", sDeg);
+	
+	setTimeout(function() {
+		$(".icon.clock .clock").removeClass("set");
+		doRotate(".icon.clock hr.second", (sDeg+360));
+	}, 1);
+}
+
+function doRotate(target, deg) {
+	$(target).css({
+		'-moz-transform':'rotate('+deg+'deg)',
+		'-webkit-transform':'rotate('+deg+'deg)',
+		'-o-transform':'rotate('+deg+'deg)',
+		'-ms-transform':'rotate('+deg+'deg)',
+		'transform': 'rotate('+deg+'deg)'
+	});  
 }
