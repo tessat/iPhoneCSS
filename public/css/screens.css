@@ -798,7 +798,7 @@ Home Screen
 .iphone .screen .icon.videos .arm div {
 	width:120%;
 	position:absolute;
-	left:-10%;
+	left:-7%;
 }
 
 .iphone .screen .icon.videos .arm span {
@@ -814,11 +814,11 @@ Home Screen
 .iphone .screen .icon.videos .arm span:after {
 	content:"";
 	display:block;
-	height:15px;
-	width:15px;
+	height:16px;
+	width:16px;
 	position:absolute;
 	left:0px;
-	top:0px;
+	top:-1px;
 	background:#fff;
 	
 	-webkit-transform: 	rotate(45deg);
@@ -1078,7 +1078,249 @@ Home Screen
 /* Home Screen: Icons: Stocks */
 
 .iphone .screen .icon.stocks {
-	background:#000;
+	background: rgb(0,0,0);
+	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 11%, rgba(102,102,102,1) 11%, rgba(102,102,102,1) 12%, rgba(0,0,0,1) 12%, rgba(0,0,0,1) 30%, rgba(102,102,102,1) 30%, rgba(102,102,102,1) 31%, rgba(0,0,0,1) 31%, rgba(0,0,0,1) 50%, rgba(102,102,102,1) 50%, rgba(102,102,102,1) 51%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 69%, rgba(102,102,102,1) 69%, rgba(102,102,102,1) 70%, rgba(0,0,0,1) 70%, rgba(0,0,0,1) 88%, rgba(102,102,102,1) 88%, rgba(102,102,102,1) 89%, rgba(0,0,0,1) 89%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(11%,rgba(0,0,0,1)), color-stop(11%,rgba(102,102,102,1)), color-stop(12%,rgba(102,102,102,1)), color-stop(12%,rgba(0,0,0,1)), color-stop(30%,rgba(0,0,0,1)), color-stop(30%,rgba(102,102,102,1)), color-stop(31%,rgba(102,102,102,1)), color-stop(31%,rgba(0,0,0,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(50%,rgba(102,102,102,1)), color-stop(51%,rgba(102,102,102,1)), color-stop(51%,rgba(0,0,0,1)), color-stop(69%,rgba(0,0,0,1)), color-stop(69%,rgba(102,102,102,1)), color-stop(70%,rgba(102,102,102,1)), color-stop(70%,rgba(0,0,0,1)), color-stop(88%,rgba(0,0,0,1)), color-stop(88%,rgba(102,102,102,1)), color-stop(89%,rgba(102,102,102,1)), color-stop(89%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 11%,rgba(102,102,102,1) 11%,rgba(102,102,102,1) 12%,rgba(0,0,0,1) 12%,rgba(0,0,0,1) 30%,rgba(102,102,102,1) 30%,rgba(102,102,102,1) 31%,rgba(0,0,0,1) 31%,rgba(0,0,0,1) 50%,rgba(102,102,102,1) 50%,rgba(102,102,102,1) 51%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 69%,rgba(102,102,102,1) 69%,rgba(102,102,102,1) 70%,rgba(0,0,0,1) 70%,rgba(0,0,0,1) 88%,rgba(102,102,102,1) 88%,rgba(102,102,102,1) 89%,rgba(0,0,0,1) 89%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 11%,rgba(102,102,102,1) 11%,rgba(102,102,102,1) 12%,rgba(0,0,0,1) 12%,rgba(0,0,0,1) 30%,rgba(102,102,102,1) 30%,rgba(102,102,102,1) 31%,rgba(0,0,0,1) 31%,rgba(0,0,0,1) 50%,rgba(102,102,102,1) 50%,rgba(102,102,102,1) 51%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 69%,rgba(102,102,102,1) 69%,rgba(102,102,102,1) 70%,rgba(0,0,0,1) 70%,rgba(0,0,0,1) 88%,rgba(102,102,102,1) 88%,rgba(102,102,102,1) 89%,rgba(0,0,0,1) 89%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 11%,rgba(102,102,102,1) 11%,rgba(102,102,102,1) 12%,rgba(0,0,0,1) 12%,rgba(0,0,0,1) 30%,rgba(102,102,102,1) 30%,rgba(102,102,102,1) 31%,rgba(0,0,0,1) 31%,rgba(0,0,0,1) 50%,rgba(102,102,102,1) 50%,rgba(102,102,102,1) 51%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 69%,rgba(102,102,102,1) 69%,rgba(102,102,102,1) 70%,rgba(0,0,0,1) 70%,rgba(0,0,0,1) 88%,rgba(102,102,102,1) 88%,rgba(102,102,102,1) 89%,rgba(0,0,0,1) 89%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 11%,rgba(102,102,102,1) 11%,rgba(102,102,102,1) 12%,rgba(0,0,0,1) 12%,rgba(0,0,0,1) 30%,rgba(102,102,102,1) 30%,rgba(102,102,102,1) 31%,rgba(0,0,0,1) 31%,rgba(0,0,0,1) 50%,rgba(102,102,102,1) 50%,rgba(102,102,102,1) 51%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 69%,rgba(102,102,102,1) 69%,rgba(102,102,102,1) 70%,rgba(0,0,0,1) 70%,rgba(0,0,0,1) 88%,rgba(102,102,102,1) 88%,rgba(102,102,102,1) 89%,rgba(0,0,0,1) 89%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );
+}
+
+.iphone .screen .icon.stocks .graph {
+	position:absolute;
+	top:50%;
+	left:0px;
+	width:100%;
+	height:1px;
+}
+
+.iphone .screen .icon.stocks .graph + .current {
+	background: -moz-linear-gradient(left,  rgba(55,173,255,1) 0%, rgba(55,173,255,1) 50%, rgba(55,173,255,0.01) 51%, rgba(55,173,255,0.01) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(55,173,255,1)), color-stop(50%,rgba(55,173,255,1)), color-stop(51%,rgba(55,173,255,0.01)), color-stop(100%,rgba(55,173,255,0.01)));
+	background: -webkit-linear-gradient(left,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 50%,rgba(55,173,255,0.01) 51%,rgba(55,173,255,0.01) 100%);
+	background: -o-linear-gradient(left,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 50%,rgba(55,173,255,0.01) 51%,rgba(55,173,255,0.01) 100%);
+	background: -ms-linear-gradient(left,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 50%,rgba(55,173,255,0.01) 51%,rgba(55,173,255,0.01) 100%);
+	background: linear-gradient(to right,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 50%,rgba(55,173,255,0.01) 51%,rgba(55,173,255,0.01) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37adff', endColorstr='#0337adff',GradientType=1 );
+	
+	display:block;
+	height:46px;
+	width:1px;
+	position:absolute;
+	right:13px;
+	top:0px;
+}
+
+.iphone .screen .icon.stocks .graph + .current:before {
+	background: rgb(55,173,255);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(55,173,255,1) 0%, rgba(55,173,255,1) 60%, rgba(0,0,0,1) 60%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(55,173,255,1)), color-stop(60%,rgba(55,173,255,1)), color-stop(60%,rgba(0,0,0,1)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 60%,rgba(0,0,0,1) 60%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 60%,rgba(0,0,0,1) 60%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 60%,rgba(0,0,0,1) 60%);
+	background: radial-gradient(ellipse at center,  rgba(55,173,255,1) 0%,rgba(55,173,255,1) 60%,rgba(0,0,0,1) 60%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37adff', endColorstr='#000000',GradientType=1 );
+	
+	content:"";
+	display:block;
+	height:4px;
+	width:4px;
+	position:absolute;
+	top:11px;
+	left:-2px;
+	
+	-moz-border-radius:			4px;
+  -webkit-border-radius:	4px;
+  border-radius:					4px;
+}
+
+.iphone .screen .icon.stocks .graph hr {
+	height:1px;
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	border:none;
+	display:inline-block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	
+	-moz-border-radius:			1px;
+  -webkit-border-radius:	1px;
+  border-radius:					1px;
+
+	-webkit-transform-origin: left 2px;
+	-moz-transform-origin: 		left 2px;
+	-ms-transform-origin:			left 2px;
+	-o-transform-origin:			left 2px;
+
+	box-shadow:0px 2px 5px 1px rgba(255,255,255,0.2), 0px -1px 2px 0px #000;
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(1) {
+	width:7px;
+	left:-1px;
+	
+	-webkit-transform: 	rotate(25deg);
+	-moz-transform: 		rotate(25deg);
+	-ms-transform: 			rotate(25deg);
+	-o-transform: 			rotate(25deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(2) {
+	width:3px;
+	top:3px;
+	left:6px;
+	
+	-webkit-transform: 	rotate(-25deg);
+	-moz-transform: 		rotate(-25deg);
+	-ms-transform: 			rotate(-25deg);
+	-o-transform: 			rotate(-25deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(3) {
+	width:5px;
+	left:9px;
+	top:2px;
+	
+	-webkit-transform: 	rotate(-60deg);
+	-moz-transform: 		rotate(-60deg);
+	-ms-transform: 			rotate(-60deg);
+	-o-transform: 			rotate(-60deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(4) {
+	width:5px;
+	left:9px;
+	top:-2px;
+	
+	-webkit-transform: 	rotate(40deg);
+	-moz-transform: 		rotate(40deg);
+	-ms-transform: 			rotate(40deg);
+	-o-transform: 			rotate(40deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(5) {
+	width:8px;
+	left:15px;
+	top:0px;
+	
+	-webkit-transform: 	rotate(-70deg);
+	-moz-transform: 		rotate(-70deg);
+	-ms-transform: 			rotate(-70deg);
+	-o-transform: 			rotate(-70deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(6) {
+	width:10px;
+	left:15px;
+	top:-7px;
+	
+	-webkit-transform: 	rotate(75deg);
+	-moz-transform: 		rotate(75deg);
+	-ms-transform: 			rotate(75deg);
+	-o-transform: 			rotate(75deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(7) {
+	width:6px;
+	left:18px;
+	top:3px;
+	
+	-webkit-transform: 	rotate(20deg);
+	-moz-transform: 		rotate(20deg);
+	-ms-transform: 			rotate(20deg);
+	-o-transform: 			rotate(20deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(8) {
+	width:6px;
+	left:25px;
+	top:4px;
+	
+	-webkit-transform: 	rotate(-65deg);
+	-moz-transform: 		rotate(-65deg);
+	-ms-transform: 			rotate(-65deg);
+	-o-transform: 			rotate(-65deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(9) {
+	width:4px;
+	left:26px;
+	top:0px;
+	
+	-webkit-transform: 	rotate(-15deg);
+	-moz-transform: 		rotate(-15deg);
+	-ms-transform: 			rotate(-15deg);
+	-o-transform: 			rotate(-15deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(10) {
+	width:10px;
+	left:31px;
+	top:-2px;
+	
+	-webkit-transform: 	rotate(-73deg);
+	-moz-transform: 		rotate(-73deg);
+	-ms-transform: 			rotate(-73deg);
+	-o-transform: 			rotate(-73deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(11) {
+	width:6px;
+	left:31px;
+	top:-11px;
+	
+	-webkit-transform: 	rotate(70deg);
+	-moz-transform: 		rotate(70deg);
+	-ms-transform: 			rotate(70deg);
+	-o-transform: 			rotate(70deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(12) {
+	width:4px;
+	left:35px;
+	top:-5px;
+	
+	-webkit-transform: 	rotate(-30deg);
+	-moz-transform: 		rotate(-30deg);
+	-ms-transform: 			rotate(-30deg);
+	-o-transform: 			rotate(-30deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(13) {
+	width:6px;
+	left:36px;
+	top:-7px;
+	
+	-webkit-transform: 	rotate(50deg);
+	-moz-transform: 		rotate(50deg);
+	-ms-transform: 			rotate(50deg);
+	-o-transform: 			rotate(50deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(14) {
+	width:8px;
+	left:42px;
+	top:-3px;
+	
+	-webkit-transform: 	rotate(-70deg);
+	-moz-transform: 		rotate(-70deg);
+	-ms-transform: 			rotate(-70deg);
+	-o-transform: 			rotate(-70deg);
+}
+
+.iphone .screen .icon.stocks .graph hr:nth-child(15) {
+	width:3px;
+	left:44px;
+	top:-9px;
+	
+	-webkit-transform: 	rotate(-30deg);
+	-moz-transform: 		rotate(-30deg);
+	-ms-transform: 			rotate(-30deg);
+	-o-transform: 			rotate(-30deg);
 }
 
 /* Home Screen: Icons: Calculator */
