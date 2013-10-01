@@ -525,7 +525,7 @@ Home Screen
 	width:2px;
 	background:#ffc104;
 	position:absolute;
-	right:-3px;
+	right:-4px;
 	top:-2px;
 	
 	-moz-border-radius: 		4px;
@@ -552,6 +552,80 @@ Home Screen
 	background: -ms-linear-gradient(top,  #4688ff 0%,#4ce4ff 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #4688ff 0%,#4ce4ff 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4688ff', endColorstr='#4ce4ff',GradientType=0 ); /* IE6-9 */
+}
+
+.iphone .screen .icon.weather span {
+	display:block;
+	position:absolute;
+}
+
+.iphone .screen .icon.weather .sun {
+	background: rgb(255,193,0);
+	background: -moz-linear-gradient(top,  rgba(255,193,0,1) 0%, rgba(255,228,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,193,0,1)), color-stop(100%,rgba(255,228,0,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,193,0,1) 0%,rgba(255,228,0,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,193,0,1) 0%,rgba(255,228,0,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,193,0,1) 0%,rgba(255,228,0,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,193,0,1) 0%,rgba(255,228,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc100', endColorstr='#ffe400',GradientType=0 );
+	
+	top:9px;
+	left:6px;
+	height:20px;
+	width:20px;
+	
+	-moz-border-radius: 		20px;
+  -webkit-border-radius: 	20px;
+  border-radius: 					20px;
+}
+
+.iphone .screen .icon.weather .cloud {
+	background:#fff;
+	
+	top:23px;
+	left:10px;
+	
+	height:12px;
+	width:29px;
+	
+	-moz-border-radius: 		18px;
+  -webkit-border-radius: 	18px;
+  border-radius: 					18px;
+
+	-khtml-opacity: 0.8;
+	-moz-opacity: 	0.8;
+	opacity:				0.8;
+}
+
+.iphone .screen .icon.weather .cloud:before,
+.iphone .screen .icon.weather .cloud:after {
+	content:"";
+	display:block;
+	position:absolute;	
+	background:#fff;
+}
+
+.iphone .screen .icon.weather .cloud:before {
+	top:-10px;
+	left:4px;
+	
+	height:19px;
+	width:19px;
+	
+	-moz-border-radius: 		19px;
+  -webkit-border-radius: 	19px;
+  border-radius: 					19px;
+}
+.iphone .screen .icon.weather .cloud:after {
+	right:-1px;
+	bottom:0px;
+	
+	height:16px;
+	width:16px;
+	
+	-moz-border-radius: 		16px;
+  -webkit-border-radius: 	16px;
+  border-radius: 					16px;
 }
 
 /* Home Screen: Icons: Clock */
