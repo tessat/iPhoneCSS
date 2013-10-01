@@ -342,7 +342,7 @@ Home Screen
 }
 
 .iphone .screen .icon.photos span.orange {
-	background:rgba(250,153,0,0.4);
+	background:rgba(247,128,0,0.6);
 	
 	-webkit-transform: rotate(270deg);
 	-moz-transform: rotate(270deg);
@@ -351,7 +351,7 @@ Home Screen
 }
 
 .iphone .screen .icon.photos span.yellow {
-	background:rgba(255,235,0,0.6);
+	background:rgba(250,225,0,0.6);
 	
 	-webkit-transform: rotate(315deg);
 	-moz-transform: rotate(315deg);
@@ -360,11 +360,11 @@ Home Screen
 }
 
 .iphone .screen .icon.photos span.green {
-	background:rgba(187,229,0,0.5);
+	background:rgba(184,217,0,0.7);
 }
 
 .iphone .screen .icon.photos span.seafoam {
-	background:rgba(79,213,85,0.4);
+	background:rgba(106,194,136,0.5);
 	
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -373,7 +373,7 @@ Home Screen
 }
 
 .iphone .screen .icon.photos span.blue {
-	background:rgba(0,140,244,0.4);
+	background:rgba(0,144,227,0.5);
 	
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
@@ -403,23 +403,143 @@ Home Screen
 /* Home Screen: Icons: Camera */
 
 .iphone .screen .icon.camera {
-	background: #e5e6e7; /* Old browsers */
-	background: -moz-linear-gradient(top,  #e5e6e7 0%, #a5a9ab 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e6e7), color-stop(100%,#a5a9ab)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #e5e6e7 0%,#a5a9ab 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #e5e6e7 0%,#a5a9ab 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #e5e6e7 0%,#a5a9ab 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #e5e6e7 0%,#a5a9ab 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e6e7', endColorstr='#a5a9ab',GradientType=0 ); /* IE6-9 */
+	background: rgb(220,220,222);
+	background: -moz-linear-gradient(top,  rgba(220,220,222,1) 0%, rgba(137,140,145,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220,220,222,1)), color-stop(100%,rgba(137,140,145,1)));
+	background: -webkit-linear-gradient(top,  rgba(220,220,222,1) 0%,rgba(137,140,145,1) 100%);
+	background: -o-linear-gradient(top,  rgba(220,220,222,1) 0%,rgba(137,140,145,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(220,220,222,1) 0%,rgba(137,140,145,1) 100%);
+	background: linear-gradient(to bottom,  rgba(220,220,222,1) 0%,rgba(137,140,145,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcde', endColorstr='#898c91',GradientType=0 );
+}
+
+.iphone .screen .icon.camera .shutter {
+	background:#474747;
+	position:relative;
+	display:block;
+	width:34px;
+	margin:13px auto 0px;
+	height:2px;
+	
+	box-shadow:0px 0px 1px 0px #111 inset;
+	
+	-moz-border-radius: 		6px 6px 0px 0px;
+  -webkit-border-radius: 	6px 6px 0px 0px;
+  border-radius: 					6px 6px 0px 0px;
+}
+
+.iphone .screen .icon.camera .shutter:before {
+	content:"";
+	display:block;
+	
+	height:5px;
+	width:14px;
+	margin:0 auto;
+	background:#464646;
+	position:relative;
+	bottom:4px;
+
+	border-top-left-radius:4px 6px;
+	border-top-right-radius:4px 6px;
+	
+	box-shadow:0 1px 1px -1px #111111 inset;
+}
+
+.iphone .screen .icon.camera .shutter:after {
+	background: rgb(53,53,53);
+	background: -moz-linear-gradient(top,  rgba(53,53,53,1) 0%, rgba(53,53,53,1) 75%, rgba(229,230,231,1) 75%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,53,53,1)), color-stop(75%,rgba(53,53,53,1)), color-stop(75%,rgba(229,230,231,1)));
+	background: -webkit-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(53,53,53,1) 75%,rgba(229,230,231,1) 75%);
+	background: -o-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(53,53,53,1) 75%,rgba(229,230,231,1) 75%);
+	background: -ms-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(53,53,53,1) 75%,rgba(229,230,231,1) 75%);
+	background: linear-gradient(to bottom,  rgba(53,53,53,1) 0%,rgba(53,53,53,1) 75%,rgba(229,230,231,1) 75%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#e5e6e7',GradientType=0 );
+	
+	content:"";
+	display:block;
+	position:absolute;
+	left:3px;
+	top:-2px;
+	
+	height:2px;
+	width:3px;
+	
+	-moz-border-radius: 		1px 1px 0px 0px;
+  -webkit-border-radius: 	1px 1px 0px 0px;
+  border-radius: 					1px 1px 0px 0px;
 }
 
 .iphone .screen .icon.camera .body {
+	background: rgb(64,64,64);
+	background: -moz-linear-gradient(top,  rgba(64,64,64,1) 0%, rgba(43,43,43,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,1)), color-stop(100%,rgba(43,43,43,1)));
+	background: -webkit-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(43,43,43,1) 100%);
+	background: -o-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(43,43,43,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(64,64,64,1) 0%,rgba(43,43,43,1) 100%);
+	background: linear-gradient(to bottom,  rgba(64,64,64,1) 0%,rgba(43,43,43,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#2b2b2b',GradientType=0 );
 	
+	width:34px;
+	height:13px;
+	margin:1px auto 0px;
+	padding:2px 0px;
+	
+	box-shadow:0px 0px 1px 0px #111 inset;
+}
+
+.iphone .screen .icon.camera .body:after {
+	content:"";
+	display:block;
+	width:34px;
+	height:2px;
+	background:#2b2b2b;
+	margin:3px auto;
+	
+	box-shadow:0px 0px 1px 0px #111 inset, 0px 0.5px 0px #cccdd0;
+	
+	-moz-border-radius: 		0px 0px 6px 6px;
+  -webkit-border-radius: 	0px 0px 6px 6px;
+  border-radius: 					0px 0px 6px 6px;
 }
 
 .iphone .screen .icon.camera .body .lens {
+	display:block;
+	position:relative;
+	background:transparent;
+	height:10px;
+	width:10px;
+	margin:0px auto;
+	border:1.5px solid #b2b4b7;
 	
+	box-shadow:0px 0px 1px 0px #111;
+	
+	-moz-border-radius: 		40px;
+  -webkit-border-radius: 	40px;
+  border-radius: 					40px;
 }
+
+.iphone .screen .icon.camera .body .lens:before {
+	content:"";
+	display:block;
+	height:2px;
+	width:2px;
+	background:#ffc104;
+	position:absolute;
+	right:-3px;
+	top:-2px;
+	
+	-moz-border-radius: 		4px;
+  -webkit-border-radius: 	4px;
+  border-radius: 					4px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+	.iphone .screen .icon.camera .body:after {
+		margin:4px auto;
+	}
+}
+
+
 
 /* Home Screen: Icons: Weather */
 
@@ -640,6 +760,14 @@ Home Screen
 @media only screen and (-webkit-min-device-pixel-ratio:2) {
 	.iphone .screen .icon.videos .arm:after {
 		height:1px;
+		
+		background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.01) 51%, rgba(0,0,0,0.01) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(51%,rgba(0,0,0,0.01)), color-stop(100%,rgba(0,0,0,0.01))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#03000000',GradientType=0 ); /* IE6-9 */
 	}
 }
 	
@@ -693,7 +821,18 @@ Home Screen
 @media only screen and (-webkit-min-device-pixel-ratio:2) {
 	.iphone .screen .icon.notes hr {
 		height:1px;
-		margin:7px 0px;
+		
+		background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(204,204,204,1) 50%, rgba(204,204,204,0.01) 51%, rgba(204,204,204,0.01) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(50%,rgba(204,204,204,1)), color-stop(51%,rgba(204,204,204,0.01)), color-stop(100%,rgba(204,204,204,0.01))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#03cccccc',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.iphone .screen .icon.notes hr:nth-child(4) {
+		width:96%;
 	}
 }
 
@@ -806,13 +945,60 @@ Home Screen
 @media only screen and (-webkit-min-device-pixel-ratio:2) {
 	.iphone .screen .icon.reminders hr {
 		height:1px;
-		margin:4px 2px;
+		
+		background: -moz-linear-gradient(top,  rgba(204,204,204,1) 0%, rgba(204,204,204,1) 50%, rgba(204,204,204,0.01) 51%, rgba(204,204,204,0.01) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(50%,rgba(204,204,204,1)), color-stop(51%,rgba(204,204,204,0.01)), color-stop(100%,rgba(204,204,204,0.01))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(204,204,204,1) 0%,rgba(204,204,204,1) 50%,rgba(204,204,204,0.01) 51%,rgba(204,204,204,0.01) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#03cccccc',GradientType=0 ); /* IE6-9 */
 	}
-	.iphone .screen .icon.reminders hr:before {
-		border:1px solid #fff;
-		height:3px;
-		width:3px;
+	
+	.iphone .screen .icon.reminders hr:nth-child(1):before {
+		background: rgb(252,174,0);
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(252,174,0,1) 0%, rgba(252,177,17,1) 60%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 80%, rgba(252,177,17,1) 80%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(252,174,0,1)), color-stop(60%,rgba(252,177,17,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(80%,rgba(252,177,17,1)));
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(252,174,0,1) 0%,rgba(252,177,17,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(252,177,17,1) 80%);
+		background: -o-radial-gradient(center, ellipse cover,  rgba(252,174,0,1) 0%,rgba(252,177,17,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(252,177,17,1) 80%);
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(252,174,0,1) 0%,rgba(252,177,17,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(252,177,17,1) 80%);
+		background: radial-gradient(ellipse at center,  rgba(252,174,0,1) 0%,rgba(252,177,17,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(252,177,17,1) 80%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcae00', endColorstr='#fcb111',GradientType=1 );
 	}
+
+	.iphone .screen .icon.reminders hr:nth-child(2):before {
+		background: rgb(72,198,255);
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(72,198,255,1) 0%, rgba(87,200,254,1) 60%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 80%, rgba(87,200,254,1) 80%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(72,198,255,1)), color-stop(60%,rgba(87,200,254,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(80%,rgba(87,200,254,1)));
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(72,198,255,1) 0%,rgba(87,200,254,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(87,200,254,1) 80%);
+		background: -o-radial-gradient(center, ellipse cover,  rgba(72,198,255,1) 0%,rgba(87,200,254,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(87,200,254,1) 80%);
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(72,198,255,1) 0%,rgba(87,200,254,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(87,200,254,1) 80%);
+		background: radial-gradient(ellipse at center,  rgba(72,198,255,1) 0%,rgba(87,200,254,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(87,200,254,1) 80%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48c6ff', endColorstr='#57c8fe',GradientType=1 );
+	}
+
+	.iphone .screen .icon.reminders hr:nth-child(3):before {
+		background: rgb(134,236,75);
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(134,236,75,1) 0%, rgba(138,228,88,1) 60%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 80%, rgba(138,228,88,1) 80%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(134,236,75,1)), color-stop(60%,rgba(138,228,88,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(80%,rgba(138,228,88,1)));
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(134,236,75,1) 0%,rgba(138,228,88,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(138,228,88,1) 80%);
+		background: -o-radial-gradient(center, ellipse cover,  rgba(134,236,75,1) 0%,rgba(138,228,88,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(138,228,88,1) 80%);
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(134,236,75,1) 0%,rgba(138,228,88,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(138,228,88,1) 80%);
+		background: radial-gradient(ellipse at center,  rgba(134,236,75,1) 0%,rgba(138,228,88,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(138,228,88,1) 80%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86ec4b', endColorstr='#8ae458',GradientType=1 );
+	}
+
+	.iphone .screen .icon.reminders hr:nth-child(4):before {
+		background: rgb(223,145,245);
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(223,145,245,1) 0%, rgba(219,145,241,1) 60%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 80%, rgba(219,145,241,1) 80%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(223,145,245,1)), color-stop(60%,rgba(219,145,241,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(80%,rgba(219,145,241,1)));
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(223,145,245,1) 0%,rgba(219,145,241,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(219,145,241,1) 80%);
+		background: -o-radial-gradient(center, ellipse cover,  rgba(223,145,245,1) 0%,rgba(219,145,241,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(219,145,241,1) 80%);
+		background: -ms-radial-gradient(center, ellipse cover,  rgba(223,145,245,1) 0%,rgba(219,145,241,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(219,145,241,1) 80%);
+		background: radial-gradient(ellipse at center,  rgba(223,145,245,1) 0%,rgba(219,145,241,1) 60%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 80%,rgba(219,145,241,1) 80%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df91f5', endColorstr='#db91f1',GradientType=1 );
+	}
+
 }
 
 /* Home Screen: Icons: Stocks */
@@ -988,10 +1174,9 @@ Home Screen
 		background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* Opera 11.10+ */
 		background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* IE10+ */
 		background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 50%,rgba(0,0,0,0.01) 51%,rgba(0,0,0,0.01) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#03000000',GradientType=1 ); /* IE6-9 */
-		
-		
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#03000000',GradientType=1 ); /* IE6-9 */	
 	}
+	
 	.iphone .screen .icon.voicememos .soundwave hr {
 		height:1px;
 		margin:0px auto;
