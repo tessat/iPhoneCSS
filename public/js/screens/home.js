@@ -100,10 +100,6 @@ function displayWeekday() {
 function displayDate() {
 	var d			= new Date();
 	var date 	= d.getDate();
-	
-	if (date < 10) {
-		date = "0" + date;
-	}
 	return date;
 }
 
