@@ -750,6 +750,12 @@ Home Screen
 	right:0px;
 }
 
+/* Home Screen: Icons: Maps */
+
+.iphone .screen .icon.maps {
+	display:none;
+}
+
 /* Home Screen: Icons: Videos */
 
 .iphone .screen .icon.videos {
@@ -2010,6 +2016,8 @@ Home Screen
 	background: -ms-linear-gradient(top,  #e6e6e6 0%,#a5a8ac 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #e6e6e6 0%,#a5a8ac 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#a5a8ac',GradientType=0 ); /* IE6-9 */
+	
+	display:none;
 }
 
 /* Home Screen: Icons: Phone */
@@ -2023,6 +2031,64 @@ Home Screen
 	background: -ms-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #a1fe80 0%,#4adf6e 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1fe80', endColorstr='#4adf6e',GradientType=0 ); /* IE6-9 */
+}
+
+.iphone .screen .icon.phone span {
+	background:#fff;
+	height:5px;
+	width:36px;
+	position:absolute;
+	
+	top:24px;
+	left:2px;
+	
+	border-top-left-radius:20px 5px;
+	border-top-right-radius:20px 5px;
+	
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+	
+	-webkit-transform: 	rotate(225deg);
+	-moz-transform: 		rotate(225deg);
+	-ms-transform: 			rotate(225deg);
+	-o-transform: 			rotate(225deg);
+}
+
+.iphone .screen .icon.phone span:before,
+.iphone .screen .icon.phone span:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:2px;
+	height:9px;
+	width:11px;
+	background:#fff;
+}
+
+.iphone .screen .icon.phone span:before {
+	left:-1px;
+	
+	-moz-border-radius: 		4px 2px 2px 2px;
+  -webkit-border-radius: 	4px 2px 2px 2px;
+  border-radius: 					4px 2px 2px 2px;
+	
+	-webkit-transform: 	rotate(-5deg);
+	-moz-transform: 		rotate(-5deg);
+	-ms-transform: 			rotate(-5deg);
+	-o-transform: 			rotate(-5deg);
+}
+
+.iphone .screen .icon.phone span:after {
+	right:-1px;
+	
+	-moz-border-radius: 		2px 4px 2px 2px;
+  -webkit-border-radius: 	2px 4px 2px 2px;
+  border-radius: 					2px 4px 2px 2px;
+	
+	-webkit-transform: 	rotate(5deg);
+	-moz-transform: 		rotate(5deg);
+	-ms-transform: 			rotate(5deg);
+	-o-transform: 			rotate(5deg);
 }
 
 /* Home Screen: Icons: Mail */
