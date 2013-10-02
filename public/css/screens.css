@@ -1901,6 +1901,95 @@ Home Screen
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4383fe', endColorstr='#60dbfb',GradientType=0 ); /* IE6-9 */
 }
 
+
+/* Home Screen: Icons: Safari */
+
+.iphone .screen .icon.safari {}
+	
+.iphone .screen .icon.safari .compass {
+	background: rgb(26,213,253);
+	background: -moz-linear-gradient(top,  rgba(26,213,253,1) 0%, rgba(29,100,240,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(26,213,253,1)), color-stop(100%,rgba(29,100,240,1)));
+	background: -webkit-linear-gradient(top,  rgba(26,213,253,1) 0%,rgba(29,100,240,1) 100%);
+	background: -o-linear-gradient(top,  rgba(26,213,253,1) 0%,rgba(29,100,240,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(26,213,253,1) 0%,rgba(29,100,240,1) 100%);
+	background: linear-gradient(to bottom,  rgba(26,213,253,1) 0%,rgba(29,100,240,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ad5fd', endColorstr='#1d64f0',GradientType=0 );
+	
+	height:40px;
+	width:40px;
+	margin:3px auto;
+	
+	-moz-border-radius: 		36px;
+  -webkit-border-radius: 	36px;
+  border-radius: 					36px;
+}
+
+.iphone .screen .icon.safari .compass:before,
+.iphone .screen .icon.safari .compass:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:45%;
+	left:50%;
+	
+	border-style:solid;
+	border-width:3px 0 3px 20px;
+	
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: 		left center;
+	-ms-transform-origin:			left center;
+	-o-transform-origin:			left center;
+}
+
+.iphone .screen .icon.safari .compass:before {
+	border-color:transparent #fff;
+	
+	-webkit-transform: 	rotate(135deg);
+	-moz-transform: 		rotate(135deg);
+	-ms-transform: 			rotate(135deg);
+	-o-transform: 			rotate(135deg);
+}
+
+.iphone .screen .icon.safari .compass:after {
+	border-color:transparent #ff1414;
+	
+	-webkit-transform: 	rotate(-45deg);
+	-moz-transform: 		rotate(-45deg);
+	-ms-transform: 			rotate(-45deg);
+	-o-transform: 			rotate(-45deg);
+}
+
+.iphone .screen .icon.safari .compass .degrees hr {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(49%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 49%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+	
+	margin:0px;
+	padding:0px;
+	height:1px;
+	border:none;
+	position:absolute;
+	top:23px;
+	left:5px;
+	
+	width:5px;
+	
+	-webkit-transform-origin: 18px center;
+	-moz-transform-origin: 		18px center;
+	-ms-transform-origin:			18px center;
+	-o-transform-origin:			18px center;
+}
+
+.iphone .screen .icon.safari .compass .degrees hr:nth-child(2n) {
+	width:7px;
+}
+
+
 /* Home Screen: Icons: Music */
 
 .iphone .screen .icon.music {

@@ -21,6 +21,8 @@ $(document).ready(function() {
 		rotateClock();
 	},60000);
 	
+	// Rotate the degrees in Safari
+	rotateDegrees();
 	
 });
 
@@ -127,6 +129,16 @@ function rotateClock(set) {
 	}, 1);
 }
 
+function rotateDegrees() {
+	var deg = 0;
+	var inc = 360/$(".iphone .screen .icon.safari .compass .degrees hr").length;
+	$(".iphone .screen .icon.safari .compass .degrees hr").each(function() {
+		doRotate($(this), deg);
+		deg += inc;
+	});
+}
+
+
 function doRotate(target, deg) {
 	$(target).css({
 		'-moz-transform':'rotate('+deg+'deg)',
@@ -136,3 +148,6 @@ function doRotate(target, deg) {
 		'transform': 'rotate('+deg+'deg)'
 	});  
 }
+
+
+
