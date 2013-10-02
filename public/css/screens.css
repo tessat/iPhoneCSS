@@ -1847,6 +1847,143 @@ Home Screen
 
 .iphone .screen .icon.compass {
 	background:#000;
+	position:relative;
+}
+
+.iphone .screen .icon.compass .degrees {
+	background:#2b2b2b;
+	position:absolute;
+	left:14px;
+	top:14px;
+	
+	height:18px;
+	width:18px;
+	
+	-moz-border-radius: 		18px;
+  -webkit-border-radius: 	18px;
+  border-radius: 					18px;
+}
+
+.iphone .screen .icon.compass .degrees:before {
+	content:"";
+	position:absolute;
+	display:block;
+	right:-9px;
+	top:-9px;
+	
+	border-color:transparent #ff3b30;
+	border-style:solid;
+	border-width:2px 0px 2px 4px;
+	
+	-webkit-transform: 	rotate(-45deg);
+	-moz-transform: 		rotate(-45deg);
+	-ms-transform: 			rotate(-45deg);
+	-o-transform: 			rotate(-45deg);
+}
+
+.iphone .screen .icon.compass .degrees span {	
+	position:absolute;
+}
+
+.iphone .screen .icon.compass .degrees span.horizontal {
+	background: -moz-linear-gradient(top,  rgba(183,183,183,1) 0%, rgba(183,183,183,1) 49%, rgba(183,183,183,0.01) 50%, rgba(183,183,183,0.01) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(183,183,183,1)), color-stop(49%,rgba(183,183,183,1)), color-stop(50%,rgba(183,183,183,0.01)), color-stop(100%,rgba(183,183,183,0.01)));
+	background: -webkit-linear-gradient(top,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	background: -o-linear-gradient(top,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	background: -ms-linear-gradient(top,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	background: linear-gradient(to bottom,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b7b7', endColorstr='#03b7b7b7',GradientType=0 );
+	
+	width:18px;
+	height:1px;
+	
+	left:0px;
+	top:9px;
+}
+
+.iphone .screen .icon.compass .degrees span.vertical {
+	background: -moz-linear-gradient(left,  rgba(183,183,183,1) 0%, rgba(183,183,183,1) 49%, rgba(183,183,183,0.01) 50%, rgba(183,183,183,0.01) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(183,183,183,1)), color-stop(49%,rgba(183,183,183,1)), color-stop(50%,rgba(183,183,183,0.01)), color-stop(100%,rgba(183,183,183,0.01)));
+	background: -webkit-linear-gradient(left,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	background: -o-linear-gradient(left,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	background: -ms-linear-gradient(left,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	background: linear-gradient(to right,  rgba(183,183,183,1) 0%,rgba(183,183,183,1) 49%,rgba(183,183,183,0.01) 50%,rgba(183,183,183,0.01) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7b7b7', endColorstr='#03b7b7b7',GradientType=1 );
+	
+	width:1px;
+	height:18px;
+	
+	left:9px;
+	top:0px;
+}
+
+.iphone .screen .icon.compass .degrees span:before,
+.iphone .screen .icon.compass .degrees span:after {
+	position:absolute;
+	font-family:sans-serif;
+	font-size:4px;
+}
+
+.iphone .screen .icon.compass .degrees span.vertical:before {
+	content:"W";
+	left:-10px;
+	top:-3px;
+}
+
+.iphone .screen .icon.compass .degrees span.vertical:after {
+	content:"N";
+	left:7px;
+	top:-3px;
+}
+
+.iphone .screen .icon.compass .degrees span.horizontal:before {
+	content:"S";
+	top:8px;
+	left:-1px;
+}
+
+.iphone .screen .icon.compass .degrees span.horizontal:after {
+	content:"E";
+	top:8px;
+	left:17px;
+}
+
+.iphone .screen .icon.compass .degrees hr {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 41%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(40%,rgba(255,255,255,1)), color-stop(41%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 41%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 41%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 41%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 41%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+	
+	margin:0px;
+	padding:0px;
+	height:1px;
+	border:none;
+	position:absolute;
+	top:9px;
+	left:-11px;
+	width:3px;
+	
+	-moz-border-radius: 		1px;
+  -webkit-border-radius: 	1px;
+  border-radius: 					1px;
+	
+	-webkit-transform-origin: 20px center;
+	-moz-transform-origin: 		20px center;
+	-ms-transform-origin:			20px center;
+	-o-transform-origin:			20px center;
+}
+
+.iphone .screen .icon.compass .degrees hr:nth-child(4n) {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(51%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
 }
 
 /* Home Screen: Icons: FaceTime */

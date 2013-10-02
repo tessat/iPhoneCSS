@@ -22,7 +22,9 @@ $(document).ready(function() {
 	},60000);
 	
 	// Rotate the degrees in Safari
-	rotateDegrees();
+	rotateDegrees($(".iphone .screen .icon.safari .compass .degrees hr"));
+	// Rotate the degrees in the Compass
+	rotateDegrees($(".iphone .screen .icon.compass .degrees hr"));
 	
 });
 
@@ -129,10 +131,10 @@ function rotateClock(set) {
 	}, 1);
 }
 
-function rotateDegrees() {
+function rotateDegrees(target) {
 	var deg = 0;
-	var inc = 360/$(".iphone .screen .icon.safari .compass .degrees hr").length;
-	$(".iphone .screen .icon.safari .compass .degrees hr").each(function() {
+	var inc = 360/$(target).length;
+	$(target).each(function() {
 		doRotate($(this), deg);
 		deg += inc;
 	});
