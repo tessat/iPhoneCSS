@@ -802,9 +802,9 @@ Home Screen
 }
 
 .iphone .screen .icon.videos .arm div {
-	width:120%;
+	width:125%;
 	position:absolute;
-	left:-7%;
+	left:-12%;
 }
 
 .iphone .screen .icon.videos .arm span {
@@ -1599,9 +1599,14 @@ Home Screen
 	height:5px;
 	width:7px;
 	
-	-moz-border-radius: 		5px;
-  -webkit-border-radius: 	5px;
-  border-radius: 					5px;
+	-moz-border-radius: 		5px 0px 5px 5px;
+  -webkit-border-radius: 	5px 0px 5px 5px;
+  border-radius: 					5px 0px 5px 5px;
+
+	-webkit-transform: 	rotate(-2deg);
+	-moz-transform: 		rotate(-2deg);
+	-ms-transform: 			rotate(-2deg);
+	-o-transform: 			rotate(-2deg);
 }
 
 /* Home Screen: Icons: Passbook */
@@ -1995,14 +2000,77 @@ Home Screen
 /* Home Screen: Icons: FaceTime */
 
 .iphone .screen .icon.facetime {
-	background: #a1fe80; /* Old browsers */
-	background: -moz-linear-gradient(top,  #a1fe80 0%, #4adf6e 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1fe80), color-stop(100%,#4adf6e)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #a1fe80 0%,#4adf6e 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1fe80', endColorstr='#4adf6e',GradientType=0 ); /* IE6-9 */
+	background: #9afd7d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9afd7d 0%, #43e62f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9afd7d), color-stop(100%,#43e62f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9afd7d 0%,#43e62f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9afd7d', endColorstr='#43e62f',GradientType=0 ); /* IE6-9 */
+}
+
+.iphone .screen .icon.facetime .camera {
+	background:#fff;
+	height:20px;
+	width:24px;
+	float:left;
+	position:relative;
+	top:13px;
+	left:7px;
+	
+	-moz-border-radius: 		3px;
+  -webkit-border-radius: 	3px;
+  border-radius: 					3px;
+}
+
+.iphone .screen .icon.facetime .camera:before {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 69%, rgba(255,255,255,0) 70%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(69%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 69%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 69%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 69%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 69%,rgba(255,255,255,0) 70%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+	
+	content:"";
+	display:inline-block;
+	height:3px;
+	width:2px;
+	float:left;
+	position:relative;
+	left:-2px;
+	top:4px;
+	
+	
+	-moz-border-radius: 		1px 0px 0px 1px;
+  -webkit-border-radius: 	1px 0px 0px 1px;
+  border-radius: 					1px 0px 0px 1px;
+}
+
+.iphone .screen .icon.facetime .camera .lens {
+	display:inline-block;
+	float:right;
+	position:relative;
+	height:6px;
+	width:6px;
+	left:8px;
+	top:3px;
+	
+	border-color:transparent #fff;
+	border-style:solid;
+	border-width:4px 7px 4px 0px;
+}
+
+.iphone .screen .icon.facetime .camera .lens:after {
+	content:"";
+	display:block;
+	background:#fff;
+	height:14px;
+	width:1px;
+	position:relative;
+	left:14px;
+	top:-4px;
 }
 
 /* Home Screen: Icons: Settings */
@@ -2023,14 +2091,14 @@ Home Screen
 /* Home Screen: Icons: Phone */
 
 .iphone .screen .icon.phone {
-	background: #a1fe80; /* Old browsers */
-	background: -moz-linear-gradient(top,  #a1fe80 0%, #4adf6e 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1fe80), color-stop(100%,#4adf6e)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #a1fe80 0%,#4adf6e 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #a1fe80 0%,#4adf6e 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1fe80', endColorstr='#4adf6e',GradientType=0 ); /* IE6-9 */
+	background: #9afd7d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9afd7d 0%, #43e62f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9afd7d), color-stop(100%,#43e62f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #9afd7d 0%,#43e62f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #9afd7d 0%,#43e62f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9afd7d', endColorstr='#43e62f',GradientType=0 ); /* IE6-9 */
 }
 
 .iphone .screen .icon.phone span {
@@ -2059,7 +2127,7 @@ Home Screen
 	content:"";
 	display:block;
 	position:absolute;
-	top:2px;
+	top:1px;
 	height:9px;
 	width:11px;
 	background:#fff;
@@ -2268,9 +2336,14 @@ Home Screen
 	height:7px;
 	width:9px;
 	
-	-moz-border-radius: 		5px;
-  -webkit-border-radius: 	5px;
-  border-radius: 					5px;
+	-moz-border-radius: 		5px 0px 5px 5px;
+  -webkit-border-radius: 	5px 0px 5px 5px;
+  border-radius: 					5px 0px 5px 5px;
+
+	-webkit-transform: 	rotate(-2deg);
+	-moz-transform: 		rotate(-2deg);
+	-ms-transform: 			rotate(-2deg);
+	-o-transform: 			rotate(-2deg);
 }
 
 
