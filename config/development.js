@@ -20,7 +20,7 @@ var config = {
   detailedErrors: true
 , debug: true
 , hostname: null
-, port: 4000
+, port: process.env.PORT || 4000
 , model: {
     defaultAdapter: 'memory'
   }
