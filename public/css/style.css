@@ -12,14 +12,23 @@ hr {
 	-webkit-margin-end: auto;
 }
 
-#iphone {
-	width:300px;
-	height:615px;
-	position:absolute;
-	left:372px;
-	top:7px;
-	
-	display:none;
+h1,h2,h3,h4 {
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
+	text-align:center;
+	color:#000;
+}
+
+h1 {
+	padding-top:40px;
+	font-size:84px;
+	line-height:70px;
+}
+
+h2 {
+	font-size:42px;
 }
 
 
@@ -30,14 +39,12 @@ hr {
 	position:relative;
 	width:283px;
 	height:598px;
-	margin:10px auto;
+	margin:60px auto 70px;
 	padding:7px;
 	
 	-moz-border-radius:			45px;
   -webkit-border-radius:	45px;
   border-radius:					45px;
-
-	/*opacity:0.5;*/
 }
 
 

@@ -158,6 +158,10 @@ General Screen Styles
 	margin:0px 2px;
 }
 
+.iphone .screen .nav-bar span:nth-child(2) {
+	opacity:0.5;
+}
+
 .iphone .screen .footer-bar {
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 10%, rgba(255,255,255,0.3) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(10%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0.3))); /* Chrome,Safari4+ */
@@ -298,16 +302,16 @@ Home Screen
 }
 
 .iphone .screen .icon.calendar .date {
-	font-size:28px;
+	font-size:29px;
 	display:block;
 	width:100%;
 	float:left;
 	text-align:center;
 	color:#333;
 	position:relative;
-	top:-1px;
-	font-family: 'Bubbler One', sans-serif;
-	letter-spacing:1px;
+	top:-6px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
 }
 
 /* Home Screen: Icons: Photos */
@@ -1342,9 +1346,10 @@ Home Screen
 	background:#ff9500;
 	text-align:center;
 	border:1px solid #000;
-	font-family: 'Bubbler One', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight:100;
 	font-size:20px;
-	line-height:25px;
+	line-height:20px;
 }
 
 .iphone .screen .icon.calculator span.left {
@@ -1377,6 +1382,9 @@ Home Screen
 	-moz-border-radius:			0px 10px 0px 0px;
   -webkit-border-radius:	0px 10px 0px 0px;
   border-radius:					0px 10px 0px 0px;
+
+	font-size:30px;
+	line-height:18px;
 }
 
 .iphone .screen .icon.calculator span.left.bottom {
