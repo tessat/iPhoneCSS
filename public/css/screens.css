@@ -2172,6 +2172,100 @@ Home Screen
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4383fe', endColorstr='#60dbfb',GradientType=0 ); /* IE6-9 */
 }
 
+.iphone .screen .icon.mail:before {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,1) 16%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(15%,rgba(255,255,255,0)), color-stop(16%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	
+	content:"";
+	display:block;
+	position:absolute;
+	height:2px;
+	width:6px;
+	top:27px;
+	left:21px;
+}
+
+.iphone .screen .icon.mail .envelope {
+	height:20px;
+	width:30px;
+	position:absolute;
+	top:13px;
+	left:8px;
+	overflow:hidden;
+}
+
+.iphone .screen .icon.mail .envelope:before,
+.iphone .screen .icon.mail .envelope:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:3px;
+	background:#fff;
+	
+	height:14px;
+	width:14px;
+	
+	-webkit-transform: 	rotate(45deg);
+	-moz-transform: 		rotate(45deg);
+	-ms-transform: 			rotate(45deg);
+	-o-transform: 			rotate(45deg);
+}
+
+.iphone .screen .icon.mail .envelope:before {
+	left:-7px;
+}
+
+.iphone .screen .icon.mail .envelope:after {
+	right:-7px;
+}
+
+.iphone .screen .icon.mail .envelope .flap {
+	display:block;
+	position:absolute;
+	left:5px;
+	top:-10px;
+	height:20px;
+	width:20px;
+	background:#fff;
+	
+	-moz-border-radius: 		0px 0px 2px 0px;
+  -webkit-border-radius: 	0px 0px 2px 0px;
+  border-radius: 					0px 0px 2px 0px;
+	
+	-webkit-transform: 	rotate(45deg);
+	-moz-transform: 		rotate(45deg);
+	-ms-transform: 			rotate(45deg);
+	-o-transform: 			rotate(45deg);
+}
+
+.iphone .screen .icon.mail .envelope .flap:before,
+.iphone .screen .icon.mail .envelope .flap:after {
+	content:"";
+	display:block;
+	
+	background:#fff;
+	height:13px;
+	width:13px;
+
+	position:relative;
+}
+
+.iphone .screen .icon.mail .envelope .flap:before {
+	top:14px;
+	left:21px;
+}
+
+.iphone .screen .icon.mail .envelope .flap:after {
+	top:8px;
+	left:14px;
+}
+
+
 
 /* Home Screen: Icons: Safari */
 
