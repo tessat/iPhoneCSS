@@ -34,6 +34,8 @@ h2 {
 	top:0px;
 	left:0px;
 	width:100%;
+	
+	padding:8px 5px;
 }
 
 .links .github {
@@ -47,9 +49,7 @@ h2 {
 }
 
 .links .twitter-share-button {
-	position:absolute;
-	top:10px;
-	left:15px;
+	display:block;
 }
 
 .disclaimer {
