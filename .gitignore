@@ -6,3 +6,4 @@ dist
 npm-debug.log
 public/js/core/models.js
 log/
+node_modules
